@@ -52,10 +52,10 @@ video {
 }
 .vid_des{
 }
-#drag{
+#dragggable{
 	top:0px;
 	left:0px;
-	width: 0%;
+	width: 30%;
 	position: fixed !important;
 }
 
