@@ -44,6 +44,9 @@ video {
 .title_img{
 	width:100%;
 }
+.vid_des{
+	width:100%;
+}
 #draggable{
 	top:0px;
 	left:0px;
