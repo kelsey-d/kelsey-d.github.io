@@ -55,7 +55,7 @@ video {
 #dragggable{
 	top:0px;
 	left:0px;
-	width: 30%;
+	width: 100%;
 	position: fixed !important;
 }
 
