@@ -25,12 +25,11 @@
 			<button id="voldec" type="button" data-state="voldown">Vol-</button>
 		</div>
 	</figure>
-	<div id="draggable" class="ui-widget-content">
+	<div id="draggable1" class="ui-widget-content">
 	  	<img src="media/vidtitle.png" class="title_img">
-		<img src="media/description.png" style="width:100%;height:100%" class="vid_des">
 		</div>
-	<div id="draggable" class="ui-widget-content">
-		
+	<div id="draggable2" class="ui-widget-content">
+		<img src="media/description.png" style="width:100%;height:100%" class="vid_des">
 	</div>
 </div>
 	<a href="/index.html">back to homepage</a>
@@ -39,7 +38,8 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
 		$( function() {
-		$( "#draggable" ).draggable();
+		$( "#draggable1" ).draggable();
+		$( "#draggable2" ).draggable();
 		} );
 	</script>
 	
