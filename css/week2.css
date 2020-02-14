@@ -44,20 +44,11 @@ video {
 .title_img{
 	width:30%;
 }
-#draggable1{
+.ui-widget-content{
 	top:0px;
 	left:0px;
 	width: 30%;
 	position: fixed !important;
-}
-.vid_des{
-}
-#dragggable2{
-	top:0px;
-	left:0px;
-	width: 30%;
-	position: fixed !important;
-}
 
 /* controls */
 .controls, .controls > * {
