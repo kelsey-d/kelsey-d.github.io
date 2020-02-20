@@ -5,6 +5,21 @@
 	position: relative;
 }
 
+#package:hover {
+	display: none;
+}
+
+#contents{
+	height: 650px;
+	width: 350px;
+	position: fixed;
+}
+
+#pocky-sticks{
+	width: 100%;
+	height: 650px;
+}
+
 #pocky {
 	color: white;
 	text-shadow: 4px 4px 16px #E11F3F;
