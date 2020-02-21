@@ -2,14 +2,34 @@
 	<head>
 		<title>Kelsey's Homepage</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lacquer|Press+Start+2P|Quantico|Source+Code+Pro&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="js/jquery.collapse.js"></script>
+    	<script src="js/jquery.collapse_storage.js"></script>
+    	<script src="js/jquery.collapse_cookie_storage.js"></script>
 	</head>
 	<body>
-		<div align="center">
-			<h1> Welcome Home </h1>
-			<a href="week1.html">week 1</a>
-			<p><a href="week2.html">week 2</a></p>
-			<p><a href="week3.html">week 3</a></p>
-			
+	<div class="container">
+		<div class='title' align='center'>
+			<h1> Welcome 
+				<br>Home </h1>
 		</div>
+		<div class="menu">
+			<ul class="menu_list">
+				<li id="home"><a href="#">home</a></li>
+				<li id="about">about</li>
+				<div id="default-example" data-collapse="accordion">
+				<li id="works">works</li>
+				<div>
+					<ul class="work_list">
+						<li><a href="week1.html">week 1</a></li>
+						<li><a href="week2.html">week 2</a></li>
+						<li><a href="week3.html">week 3</a></li>
+					</ul>
+				</div>
+			</div>
+			</ul>
+		</div>
+	</div>
 	</body>
 </html>
