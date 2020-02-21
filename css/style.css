@@ -1,15 +1,38 @@
 body{
 	background-color: #FFF498;
 }
-
-.main_div{
-	width: 50%;
-	background-color: transparent;
-	border-radius: 40px;
-	border:1px dotted black;
+.container {
+	height: 932px;
+	background-image: url(../img/alien.jpeg);
+	background-size: cover;
+}
+.title{
+	font-family: 'Press Start 2P';
+	font-size: 56px;
+	color: #1A7F46;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
 }
 
-#img1{
-	width: 50%;
-	padding: 20px;
+.menu{
+	margin: 24px;
+
+}
+ .menu_list{
+ 	list-style-type: none;
+ 	background-color: #1A7F46;
+
+ }
+
+ .work_list{
+ 	list-style-type: none;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+li {
+	font-family: 'Quantico';
+	font-size: 50px;
 }
