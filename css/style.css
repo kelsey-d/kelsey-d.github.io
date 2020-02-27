@@ -1,29 +1,45 @@
 body{
 	background-color: #FFF498;
 }
+
 .container {
-	height: 932px;
-	background-image: url(../img/alien.jpeg);
-	background-size: cover;
+	width: 100%;
 }
-.title{
+
+.title {
 	font-family: 'Press Start 2P';
-	font-size: 56px;
+	font-size: 20px;
 	color: #1A7F46;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	width: 700px;
+	background-color: #FFF498;
+	text-align: center;
+	margin: 300px 0px 0px 500px; 
 	position: absolute;
+	border-top: 3px solid #1A7F46;
+	border-bottom: 3px solid #1A7F46;
+}
+
+
+.image {
+	height: 732px;
+	width: 700px;
+	margin: 40px 300px 0px 500px;
+	background-image: url(../img/weird.png);
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
 }
 
 .menu{
 	margin: 24px;
+	width: 224px;
+ 	height: 100%;
+ 	background-color: #1A7F46;
+ 	position: absolute;
 
 }
  .menu_list{
  	list-style-type: none;
- 	background-color: #1A7F46;
-
  }
 
  .work_list{
@@ -35,4 +51,18 @@ body{
 li {
 	font-family: 'Quantico';
 	font-size: 50px;
+	color: #FFF498;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+a:visited {
+	color: inherit;
 }

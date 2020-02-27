@@ -1,0 +1,33 @@
+body{
+	background-color: #FFF498;
+}
+
+h1 {
+	font-family: 'Press Start 2P';
+	color: #1A7F46;
+	text-align: center;
+}
+
+.image {
+	height: 456px;
+	width: 614px;
+	background-image: url(../img/me.jpg);
+	background-size: cover;
+	margin: 200px 600px;
+	position: absolute;
+	border: 5px solid white;
+}
+.text {
+	font-family: 'Quantico';
+	font-size: 20px;
+	height: 456px;
+	width: 614px;
+	margin: 0px 400px;
+    position: absolute;
+    border: 5px solid #1A7F46;
+    z-index: -1;
+}
+
+p {
+	position: relative;
+}
