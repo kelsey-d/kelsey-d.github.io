@@ -1,0 +1,142 @@
+body {
+	background-color: #28A4FF;
+}
+
+.img_container {
+	width:310px;
+	height: 400px;
+	padding: 0%;
+	right: 0%;
+	text-align: right;
+	position: absolute;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+}
+
+.youre {
+	display: none;
+	color: blue;
+	font-family:'Homemade Apple', cursive;
+	font-size: 75px;
+	text-align: center;
+	position: absolute;
+	margin: 30% 200px;
+}
+@media only screen and (min-width: 550px) {
+	.youre {
+		display: inherit;
+	}
+}
+
+.doing {
+	display: none;
+	color: blue;
+	font-family:'Homemade Apple', cursive;
+	font-size: 75px;
+	text-align: center;
+	position: absolute;
+	margin: 40% 500px;
+}
+
+@media only screen and (min-width: 650px) {
+	.doing {
+		display: inherit;
+	}
+}
+.great {
+	display: none;
+	color: blue;
+	font-family:'Homemade Apple', cursive;
+	font-size: 75px;
+	text-align: center;
+	position: absolute;
+	margin: 30% 800px;
+}
+
+@media only screen and (min-width: 950px) {
+	.great {
+		display: inherit;
+	}
+}
+
+.sweetie {
+	display: none;
+	color: blue;
+	font-family:'Homemade Apple', cursive;
+	font-size: 75px;
+	text-align: center;
+	position: absolute;
+	margin: 40% 1100px;
+}
+
+@media only screen and (min-width: 1250px) {
+	.sweetie {
+		display: inherit;
+	}
+}
+
+.ok {
+	display: none;
+	position: absolute;
+	margin: 5% 0%;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 600px) {
+	.ok {
+		display: inherit;
+	}
+}
+.snoopy {
+	display: none;
+	position: absolute;
+	height: 5%;
+	width: 25%;
+	top: 36%; 
+	right: 0%;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 1000px) {
+	.snoopy {
+		display: inherit;
+	}
+}
+
+.kermit {
+	display: none;
+	position: absolute;
+	left: 720px;
+	top: 90%;
+}
+
+@media only screen and (min-width: 900px) {
+	.kermit {
+		display: inherit;
+	}
+}
+
+.gift {
+	display: none;
+	position: absolute;
+	font-size: 50px;
+	font-family:'Mansalva';
+	text-align: center;
+	top: 5%;
+	left: 30%;
+	color: white;
+	background-color: #D87FC7;
+	opacity: 50%;
+	
+}
+@media only screen and (min-width: 900px) {
+	.gift {
+		display: inherit;
+	}
+}
+p {
+	
+}
