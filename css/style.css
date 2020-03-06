@@ -10,24 +10,35 @@ body{
 	font-family: 'Press Start 2P';
 	font-size: 20px;
 	color: #1A7F46;
-	width: 700px;
+	width: 800px;
 	background-color: #FFF498;
 	text-align: center;
-	margin: 300px 0px 0px 500px; 
-	position: absolute;
+	margin: 22% 35%; 
+	position: fixed;
 	border-top: 3px solid #1A7F46;
 	border-bottom: 3px solid #1A7F46;
 }
 
 
 .image {
-	height: 732px;
-	width: 700px;
-	margin: 40px 300px 0px 500px;
+	height: 832px;
+	width: 800px;
+	margin: 10% 35%;
 	background-image: url(../img/weird.png);
 	background-size: cover;
-	position: absolute;
+	position: fixed;
 	z-index: -1;
+}
+
+@media only screen and (max-width: 700px) {
+	.title {
+		width: 50%;
+	}
+	
+	.image {
+		height: 50%;
+		width: 50%;
+	}
 }
 
 .menu{
@@ -36,6 +47,7 @@ body{
  	height: 100%;
  	background-color: #1A7F46;
  	position: absolute;
+ 	z-index: -1;
 
 }
  .menu_list{
