@@ -11,14 +11,16 @@ body{
 	font-size: 20px;
 	color: #1A7F46;
 	width: 800px;
-	background-color: #FFF498;
 	text-align: center;
 	margin: 22% 35%; 
 	position: fixed;
 	border-top: 3px solid #1A7F46;
 	border-bottom: 3px solid #1A7F46;
+	animation-name: title_animation;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
 }
-
 
 .image {
 	height: 832px;
@@ -30,6 +32,28 @@ body{
 	z-index: -1;
 }
 
+@media only screen and (max-width: 1600px) {
+	.title {
+		font-family: 'Press Start 2P';
+		font-size: 20px;
+		color: #1A7F46;
+		width: 700px;
+		text-align: center;
+		margin: 300px 0px 0px 500px; 
+		position: absolute;
+		border-top: 3px solid #1A7F46;
+		border-bottom: 3px solid #1A7F46;
+	}
+	.image {
+		height: 732px;
+		width: 700px;
+		margin: 40px 300px 0px 500px;
+		background-image: url(../img/weird.png);
+		background-size: cover;
+		position: absolute;
+		z-index: -1;
+	}
+}
 @media only screen and (max-width: 700px) {
 	.title {
 		width: 50%;
@@ -77,4 +101,32 @@ a:hover {
 
 a:visited {
 	color: inherit;
+}
+
+.landing_animation_container {
+	width: 100%;
+	height: 100%;
+	background-color: #1A7F46;
+	background-image: url(../img/twinkle.gif);
+	background-repeat: initial;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	animation-name: background_animation;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+@keyframes background_animation {
+	0% { opaciy: 1;}
+	99% { opacity: 0; z-index: 0;}
+	100% { opacity: 0; z-index: -1;}
+}
+
+@keyframes title_animation {
+	0% {margin: 20% -40%; z-index: 1;}
+	50% {background: transparent;}
+	100% {background-color: #FFF498;}
 }
