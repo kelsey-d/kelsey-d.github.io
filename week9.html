@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Randomized Poem</title>
+	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rock+Salt&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/logo.png" type='image/png' >
+	<style>
+		#poem {
+			text-align: center;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="poem">
+		<p>
+			Hold fast to <span id="dreams1">dreams</span><br>
+			For if <span id="dreams2">dreams</span> die<br>
+			Life is a broken-winged bird<br>
+			That cannot fly.</p>
+		<p>
+			Hold fast to <span id="dreams3">dreams</span><br>
+			For when <span id="dreams4">dreams</span> go<br>
+			Life is a barren field<br>
+			Frozen with snow.</p>
+	</div>
+	<buttton onclick="myFunction()">
+		shuffle!
+	</buttton>
+	<script>
+		function myFunction(){
+			var randomNumber = Math.random();
+			var chosenWord = "";
+			var fontFamily = "";
+			var bgColor = "";
+
+			if (randomNumber > 0.5){
+				chosenWord="dreams";
+				bgColor = "#D472FF";
+				fontFamily = "Homemade Apple";
+			}else{
+				chosenWord = "legumes"
+				bgColor = "#FFF498";
+				fontFamily = "Rock Salt";
+			}
+
+			var dreams1 = document.getElementById('dreams1');
+			var dreams2 = document.getElementById('dreams2');
+			var dreams3 = document.getElementById('dreams3');
+			var dreams4 = document.getElementById('dreams4');
+			var poem = document.getElementById("poem");
+
+			console.log(poem)
+
+			dreams1.innerHTML = chosenWord;
+			dreams2.innerHTML = chosenWord;
+			dreams3.innerHTML = chosenWord;
+			dreams4.innerHTML = chosenWord;
+			poem.style.backgroundColor = bgColor;
+			poem.style.fontFamily = fontFamily;
+
+
+		}
+	</script>
+
+</body>
+</html>
