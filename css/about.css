@@ -23,9 +23,9 @@ h1 {
 	height: 456px;
 	width: 614px;
 	margin: 0px 400px;
-    position: absolute;
-    border: 5px solid #1A7F46;
-    z-index: -1;
+    	position: absolute;
+    	border: 5px solid #1A7F46;
+   	z-index: -1;
 }
 
 p {
