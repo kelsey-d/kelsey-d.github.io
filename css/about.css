@@ -50,7 +50,7 @@ h1 {
 .image {
 	height: 456px;
 	width: 614px;
-	background-image: url(../img/me.jpg);
+	background-image: url(../img/me.JPG);
 	background-size: cover;
 	margin: 200px 600px;
 	position: absolute;
