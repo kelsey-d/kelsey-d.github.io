@@ -2,23 +2,79 @@
 <html>
 <head>
 	<title>Strawberry Pocky</title>
+	<link rel="icon" href="img/logo.png" type='image/png' >
 	<link rel="stylesheet" type="text/css" href="css/week3.css">
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Fjalla+One|Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Quantico|Barlow+Condensed|Fjalla+One|Pacifico&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery.collapse.js"></script>
+    <script src="js/jquery.collapse_storage.js"></script>
+    <script src="js/jquery.collapse_cookie_storage.js"></script>
 </head>
 <body>
-	<div id="contents">
-		<img src="img/pocky.png" id="pocky-sticks">
+	<div id="holder">
+	<div id="project">
+		<div id="contents">
+			<img src="img/pocky.png" id="pocky-sticks">
+		</div>
+		<div id="package">
+			<div id="pocky">Pocky</div>
+			<div id="flavor">STRAWBERRY CREAM
+			<br>COVERED
+			<br>BISCUIT STICKS
+			<br>Artificially Flavored</div>
+			<div id="weight">NET WT 2.37oz 70g</div>
+			<div id="brand">Glico</div>
+		</div>
+		</div>
+	<div id="description">
+		<div class="menu">
+			<ul class="menu_list">
+				<li id="home"><a href="index.html">home</a></li>
+				<li id="about"><a href="about.html">about</a></li>
+				<li id=""><a href="work.html">carousel</a></li>
+				<div id="default-example" data-collapse="accordion">
+				<li id="works">works</li>
+				<div>
+					<ul class="work_list">
+						<li><a href="week1.html">week 1</a></li>
+						<li><a href="week2.html">week 2</a></li>
+						<li><a href="week3.html">week 3</a></li>
+						<li><a href="week5.html">week 5</a></li>
+						<li><a href="week9.html">week 9</a></li>
+					</ul>
+				</div>
+				</div>
+			</ul>
+		</div>
+		<h1>Snack Packet</h1>
+		<div class="text">Pocky packet designed using HTML and CSS code.</div>
 	</div>
-	<div id="package">
-		<div id="pocky">Pocky</div>
-		<div id="description">STRAWBERRY CREAM
-		<br>COVERED
-		<br>BISCUIT STICKS
-		<br>Artificially Flavored</div>
-		<div id="weight">NET WT 2.37oz 70g</div>
-		<div id="brand">Glico</div>
 	</div>
+	
 
-	<p><a href="index.html" id="homepage">back to homepage</a></p>
+	<script type="text/javascript">
+		var holder = document.getElementById("holder");
+		holder.style.height = window.innerHeight + "px";
+		
+		
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+			if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+				document.getElementById("description").style.top = "0%";
+				document.getElementById("project").style.top = "100%";
+			} else {
+				document.getElementById("description").style.top = "100%";
+				document.getElementById("project").style.top = "0%"
+
+			}
+			
+			
+		}
+
+	</script>	
+
+
+
 </body>
 </html>

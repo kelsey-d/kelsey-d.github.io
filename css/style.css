@@ -33,6 +33,10 @@ body{
 	z-index: -1;
 }
 
+.image:hover {
+	z-index: 1;
+}
+
 @media only screen and (max-width: 1600px) {
 	.title {
 		font-family: 'Press Start 2P';
@@ -67,8 +71,9 @@ body{
 }
 
 .menu{
-	margin: 24px;
-	width: 224px;
+	top: 0px;
+	left: 0px;
+	width: 250px;
  	height: 100%;
  	background-color: #1A7F46;
  	position: absolute;

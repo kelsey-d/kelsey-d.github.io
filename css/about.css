@@ -2,6 +2,45 @@ body{
 	background-color: #FFF498;
 }
 
+.menu{
+	top: 0px;
+	left: 0px;
+	width: 250px;
+ 	height: 100%;
+ 	background-color: #1A7F46;
+ 	position: absolute;
+ 	z-index: -1;
+}
+
+ .menu_list{
+ 	list-style-type: none;
+ }
+
+ .work_list{
+ 	list-style-type: none;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+li {
+	font-family: 'Quantico';
+	font-size: 50px;
+	color: #FFF498;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+a:visited {
+	color: inherit;
+}
+
 h1 {
 	font-family: 'Press Start 2P';
 	color: #1A7F46;
@@ -17,6 +56,38 @@ h1 {
 	position: absolute;
 	border: 5px solid white;
 }
+
+#svg {
+	margin: 205px 604px;
+	position: absolute;
+
+}
+
+#me {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2px;
+	stroke-dasharray: 2000px;
+	stroke-dashoffset: 2000px;
+}
+
+.svg_drawing_animation {
+
+    animation: move 3s linear forwards;
+    animation-delay: .9s;
+}	
+
+.svg_drawing_animation:hover {
+	animation: infinite;
+}	
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+	
 .text {
 	font-family: 'Quantico';
 	font-size: 20px;
