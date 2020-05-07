@@ -1,6 +1,6 @@
 body{
 	background-color: #FFF498;
-	overflow:hidden;
+	overflow:scroll;
 }
 
 .container {
@@ -14,7 +14,7 @@ body{
 	width: 800px;
 	text-align: center;
 	margin: 22% 35%; 
-	position: fixed;
+	position: absolute;
 	border-top: 3px solid #1A7F46;
 	border-bottom: 3px solid #1A7F46;
 	animation-name: title_animation;
@@ -26,15 +26,78 @@ body{
 .image {
 	height: 832px;
 	width: 800px;
-	margin: 10% 35%;
+	margin: 0% 0%;
 	background-image: url(../img/weird.png);
 	background-size: cover;
-	position: fixed;
+	position: absolute;
 	z-index: -1;
 }
 
+
 .image:hover {
 	z-index: 1;
+}
+
+.phew {
+	height: 832px;
+	width: 800px;
+	margin: 0% 0%;
+	background-image: url(../img/phew.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+}
+
+
+.phew:hover {
+	z-index: 1;
+}
+
+.lana {
+	height: 832px;
+	width: 800px;
+	margin: 0% 0%;
+	background-image: url(../img/lana.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+}
+
+
+.lana:hover {
+	z-index: 1;
+}
+
+.pumpkin {
+	height: 832px;
+	width: 800px;
+	margin: 0% 0%;
+	background-image: url(../img/pumpkin.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+}
+
+
+.pumpkin:hover {
+	z-index: 1;
+}
+
+.thumbnails {
+	margin: 50% 10% 10% 29%;
+	position: absolute;
+}
+
+img {
+	padding: 0px 10px;
+}
+
+img:hover {
+	background-color: white;
+	opacity:50%;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -44,7 +107,7 @@ body{
 		color: #1A7F46;
 		width: 700px;
 		text-align: center;
-		margin: 300px 0px 0px 500px; 
+		margin: 300px 0px 0px 550px; 
 		position: absolute;
 		border-top: 3px solid #1A7F46;
 		border-bottom: 3px solid #1A7F46;
@@ -52,8 +115,38 @@ body{
 	.image {
 		height: 732px;
 		width: 700px;
-		margin: 40px 300px 0px 500px;
+		margin: 40px 300px 0px 550px;
 		background-image: url(../img/weird.png);
+		background-size: cover;
+		position: absolute;
+		z-index: -1;
+	}
+	.phew {
+		height: 732px;
+		width: 700px;
+		margin: 40px 300px 0px 550px;
+		background-image: url(../img/phew.png);
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		z-index: -1;
+	}
+	.lana {
+		height: 732px;
+		width: 700px;
+		margin: 40px 300px 0px 550px;
+		background-image: url(../img/lana.png);
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		z-index: -1;
+	}
+	.pumpkin {
+		height: 732px;
+		width: 700px;
+		margin: 40px 300px 0px 550px;
+		background-image: url(../img/pumpkin.png);
+		background-position: center;
 		background-size: cover;
 		position: absolute;
 		z-index: -1;
@@ -76,24 +169,31 @@ body{
 	width: 250px;
  	height: 100%;
  	background-color: #1A7F46;
- 	position: absolute;
+ 	position: fixed;
  	z-index: -1;
 }
 
+ 
  .menu_list{
  	list-style-type: none;
+ 	margin: 0px;
+ 	font-family: 'Quantico';
+	font-size: 50px;
+	color: #FFF498;
  }
 
  .work_list{
  	list-style-type: none;
+ 	font-size: 40px;
  	margin: 0px;
- 	padding: 0px;
+ 	padding-right: 0px;
  }
 
-li {
-	font-family: 'Quantico';
-	font-size: 50px;
-	color: #FFF498;
+.socials {
+	width: 100%;
+	bottom: 0%;
+	text-align: center;
+	position: absolute;
 }
 
 a:link {
@@ -101,12 +201,12 @@ a:link {
 	text-decoration: none;
 }
 
-a:hover {
-	color: white;
-}
-
 a:visited {
 	color: inherit;
+}
+
+a:hover {
+	color: #AAD4FF;
 }
 
 .landing_animation_container {
@@ -126,7 +226,7 @@ a:visited {
 }
 
 @keyframes background_animation {
-	0% { opaciy: 1;}
+	0% { opacity: 1;}
 	99% { opacity: 0; z-index: 0;}
 	100% { opacity: 0; z-index: -2;}
 }

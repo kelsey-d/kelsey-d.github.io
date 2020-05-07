@@ -33,8 +33,32 @@
 				</div>
 				</div>
 			</ul>
+			<div class="socials"><a href="https://www.linkedin.com/in/kelsey-damier/"><img src="img/linkedin.png"></a><a href="mailto:kelseydamier@outlook.com"><img src="img/email.png"></a></div>
 		</div>
 		<div class='image'></div>
+		<div class='thumbnails'>
+		<img onclick="weird()" src="img/tn1.png"><img onclick="phew()" src="img/tn2.png"><img onclick="lana()" src="img/tn3.png"><img onclick="pumpkin()" src="img/tn4.png"></div>
 	<div class="landing_animation_container"></div>
+	<script>
+		var image = document.getElementsByClassName("image")[0];
+		
+		function weird() {
+			image.setAttribute("class", "image");
+		}
+
+		function phew() {
+			image.setAttribute("class", "phew");
+		}
+
+		function lana() {
+			image.setAttribute("class", "lana");
+		}
+
+		function pumpkin() {
+			image.setAttribute("class", "pumpkin");
+		}
+
+
+	</script>	
 	</body>
 </html>

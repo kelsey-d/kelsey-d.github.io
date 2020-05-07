@@ -1,17 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<meta charset="utf-8" />
 	<title>Strawberry Pocky</title>
 	<link rel="icon" href="img/logo.png" type='image/png' >
 	<link rel="stylesheet" type="text/css" href="css/week3.css">
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Quantico|Barlow+Condensed|Fjalla+One|Pacifico&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="js/jquery.collapse.js"></script>
     <script src="js/jquery.collapse_storage.js"></script>
     <script src="js/jquery.collapse_cookie_storage.js"></script>
 </head>
 <body>
-	<div id="holder">
+
 	<div id="project">
 		<div id="contents">
 			<img src="img/pocky.png" id="pocky-sticks">
@@ -25,7 +27,7 @@
 			<div id="weight">NET WT 2.37oz 70g</div>
 			<div id="brand">Glico</div>
 		</div>
-		</div>
+	</div>
 	<div id="description">
 		<div class="menu">
 			<ul class="menu_list">
@@ -45,32 +47,27 @@
 				</div>
 				</div>
 			</ul>
+			<div class="socials"><a href="https://www.linkedin.com/in/kelsey-damier/"><img class="img" src="img/linkedin.png"></a><a href="mailto:kelseydamier@outlook.com"><img class="img" src="img/email.png"></a></div>
 		</div>
-		<h1>Snack Packet</h1>
-		<div class="text">Pocky packet designed using HTML and CSS code.</div>
+		<h1><div class="h1">Snack 
+			<br>Packet</div></h1>
+		<div class="date">2020</div>
+		<div class="text">An assignment from my Web Production I class. The task was to recreate a snack packet entirely through CSS. I chose to recreate the packet design for Strawberry Pocky since it is one of my favorite snacks. Hover over the packet to uncover a tasty treat.</div>
 	</div>
-	</div>
-	
-
 	<script type="text/javascript">
-		var holder = document.getElementById("holder");
-		holder.style.height = window.innerHeight + "px";
-		
+		var project = document.getElementById("project");
+		project.style.height = ((window.innerHeight)*2) + "px";
+		var description = document.getElementById("description");
+		description.style.height = window.innerHeight + "px";
 		
 		window.onscroll = function() {myFunction()};
 
 		function myFunction() {
-			if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-				document.getElementById("description").style.top = "0%";
-				document.getElementById("project").style.top = "100%";
-			} else {
-				document.getElementById("description").style.top = "100%";
-				document.getElementById("project").style.top = "0%"
-
+			if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+				description.style.animation = 'popup 3s forwards';
 			}
-			
-			
 		}
+	
 
 	</script>	
 

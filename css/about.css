@@ -12,34 +12,52 @@ body{
  	z-index: -1;
 }
 
+
  .menu_list{
  	list-style-type: none;
+ 	margin: 0px;
+ 	font-family: 'Quantico';
+	font-size: 50px;
+	color: #FFF498;
  }
 
  .work_list{
  	list-style-type: none;
+ 	font-size: 40px;
  	margin: 0px;
- 	padding: 0px;
+ 	padding-right: 0px;
  }
 
-li {
-	font-family: 'Quantico';
-	font-size: 50px;
-	color: #FFF498;
+.socials {
+	width: 100%;
+	bottom: 0%;
+	text-align: center;
+	position: absolute;
 }
+
+img {
+	padding: 0px 10px;
+}
+
+img:hover {
+	background-color: white;
+	opacity:50%;
+}
+
 
 a:link {
 	color: white;
 	text-decoration: none;
 }
 
-a:hover {
-	color: white;
-}
-
 a:visited {
 	color: inherit;
 }
+
+a:hover {
+	color: #AAD4FF;
+}
+
 
 h1 {
 	font-family: 'Press Start 2P';
@@ -94,8 +112,8 @@ h1 {
 	height: 456px;
 	width: 614px;
 	margin: 0px 400px;
-    	position: absolute;
-    	border: 5px solid #1A7F46;
+    position: absolute;
+    border: 5px solid #1A7F46;
    	z-index: -1;
 }
 

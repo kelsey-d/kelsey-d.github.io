@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<title>Responsive Page</title>
+	<link rel="icon" href="img/logo.png" type='image/png'>	
 	<link rel="stylesheet" type="text/css" href="css/week5.css">
-	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Mansalva|ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Quantico|Homemade+Apple|Mansalva|ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div>
+	<div id="project">
 		<div class='img_container'>
-			<img src="img/push.png" class="img">
+			<img src="img/push.png" class="push">
 		</div>
 		<div class="youre">You're</div>
 		<div class="doing">doing</div>
@@ -34,7 +36,35 @@
 				Keep pushing
 			</p>
 		</div>
-		<a href='index.html'>back to homepage</a>l
 	</div>
+	<div id="description">
+		<h1>Responsive <br>Page</h1>
+		<div class="date">2020</div>
+		<div class="text">Experimenting with page responsiveness to create a pop-up book of sorts. Start with a small window to try it out.</div>
+		<div class="menu">
+			<ul class="menu_list">
+				<li id="home"><a href="index.html">home</a></li>
+				<li id="about"><a href="about.html">about</a></li>
+				<li id=""><a href="work.html">carousel</a></li>
+				<div id="default-example" data-collapse="accordion">
+				<li id="works">works</li>
+				<div>
+					<ul class="work_list">
+						<li><a href="week1.html">week 1</a></li>
+						<li><a href="week2.html">week 2</a></li>
+						<li><a href="week3.html">week 3</a></li>
+						<li><a href="week5.html">week 5</a></li>
+						<li><a href="week9.html">week 9</a></li>
+					</ul>
+				</div>
+				</div>
+			</ul>
+			<div class="socials"><a href="https://www.linkedin.com/in/kelsey-damier/"><img class="img" src="img/linkedin.png"></a><a href="mailto:kelseydamier@outlook.com"><img class="img" src="img/email.png"></a></div>
+		</div>
+	</div>
+	<script>
+		var project = document.getElementById("project");
+		project.style.height = window.innerHeight + "px";
+	</script>
 </body>
 </html>
