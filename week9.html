@@ -2,16 +2,16 @@
 <html>
 <head>
 	<title>Randomized Poem</title>
-	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rock+Salt&display=swap" rel="stylesheet">
-	<link rel="icon" href="img/logo.png" type='image/png' >
-	<style>
-		#poem {
-			text-align: center;
-			font-size: 25px;
-		}
-	</style>
+	<link rel="icon" href="img/logo.png" type='image/png'>
+	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Press+Start+2P|Quantico|Rock+Salt&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/week9.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery.collapse.js"></script>
+	<script src="js/jquery.collapse_storage.js"></script>
+	<script src="js/jquery.collapse_cookie_storage.js"></script>
 </head>
 <body>
+	<div id = "project">
 	<div id="poem">
 		<p>
 			Hold fast to <span id="dreams1">dreams</span><br>
@@ -23,10 +23,37 @@
 			For when <span id="dreams4">dreams</span> go<br>
 			Life is a barren field<br>
 			Frozen with snow.</p>
-	</div>
-	<buttton onclick="myFunction()">
+
+	</div>	
+		<button onclick="myFunction()">
 		shuffle!
-	</buttton>
+		</button>		
+	</div>
+	<div class="menu">
+			<ul class="menu_list">
+				<li id="home"><a href="index.html">home</a></li>
+				<li id="about"><a href="about.html">about</a></li>
+				<li id=""><a href="work.html">carousel</a></li>
+				<div id="default-example" data-collapse="accordion">
+				<li id="works">works</li>
+				<div>
+					<ul class="work_list">
+						<li><a href="week1.html">week 1</a></li>
+						<li><a href="week2.html">week 2</a></li>
+						<li><a href="week3.html">week 3</a></li>
+						<li><a href="week5.html">week 5</a></li>
+						<li><a href="week9.html">week 9</a></li>
+					</ul>
+				</div>
+				</div>
+			</ul>
+			<div class="socials"><a href="https://www.linkedin.com/in/kelsey-damier/"><img class="img" src="img/linkedin.png"></a><a href="mailto:kelseydamier@outlook.com"><img class="img" src="img/email.png"></a></div>
+		</div>
+	<div id = "description">
+		<h1>Randomized <br> Poem</h1>
+		<div class="date">2020</div>
+		<div class="text">Using javascript to mess arounds with a poem.</div>
+
 	<script>
 		function myFunction(){
 			var randomNumber = Math.random();
@@ -40,7 +67,7 @@
 				fontFamily = "Homemade Apple";
 			}else{
 				chosenWord = "legumes"
-				bgColor = "#FFF498";
+				bgColor = "#AAD4FF";
 				fontFamily = "Rock Salt";
 			}
 
@@ -61,7 +88,25 @@
 
 
 		}
-	</script>
 
+		var project = document.getElementById("project");
+		project.style.height = ((window.innerHeight)*2) + "px";
+		var description = document.getElementById("description");
+		description.style.height = window.innerHeight + "px";
+
+		window.onscroll = function() {popup()};
+
+		function popup() {
+			if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+				description.style.animation = 'popup 3s forwards';
+			}
+		}
+	</script>
+<script type="text/javascript">
+		
+	
+
+
+	</script>
 </body>
 </html>
