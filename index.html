@@ -11,6 +11,7 @@
     	<script src="js/jquery.collapse_cookie_storage.js"></script>
 	</head>
 	<body>
+		<div class="landing_animation_container"></div>
 		<div class="container">
 		<div class='title'>
 			<h1> Welcome Home</h1>
@@ -24,6 +25,7 @@
 				<li id="works">works</li>
 				<div>
 					<ul class="work_list">
+						<li><a href="story/flower.html">week 0</a></li>
 						<li><a href="week1.html">week 1</a></li>
 						<li><a href="week2.html">week 2</a></li>
 						<li><a href="week3.html">week 3</a></li>
@@ -38,7 +40,58 @@
 		<div class='image'></div>
 		<div class='thumbnails'>
 		<img onclick="weird()" src="img/tn1.png"><img onclick="phew()" src="img/tn2.png"><img onclick="lana()" src="img/tn3.png"><img onclick="pumpkin()" src="img/tn4.png"></div>
-	<div class="landing_animation_container"></div>
+	</div>
+
+	<div class="slideshow-container">
+	<div id="slide1" class="mySlides">
+	  <div class="layer">
+	    <div class="layer_contents">
+	      <p class="author">Code Poem</p>
+	      <a href="description1.html">description</a>
+	    </div>
+	  </div>
+	 </div>
+
+	<div id="slide2" class="mySlides">
+	  <div class="layer">
+	    <div class="layer_contents">
+	      <p class="author">Video Player</p>
+	      <a href="description2.html">description</a>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="slide3" class="mySlides">
+	  <div class="layer">
+	    <div class="layer_contents">
+	      <p class="author">Snack Packet</p>
+	      <a href="description3.html">description</a>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="slide5" class="mySlides">
+	  <div class="layer">
+	    <div class="layer_contents">
+	      <p class="author">Responsive Page</p>
+	      <a href="description5.html">description</a>
+	    </div>
+	  </div>
+	</div>
+
+
+	<a class="prev" onclick="setIndexFromSideButton(-1)">❮</a>
+	<a class="next" onclick="setIndexFromSideButton(1)">❯</a>
+
+	</div>
+
+	<div class="dot-container">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+
 	<script>
 		var image = document.getElementsByClassName("image")[0];
 		
@@ -58,7 +111,7 @@
 			image.setAttribute("class", "pumpkin");
 		}
 
-
-	</script>	
-	</body>
+	</script>
+	<script src="js/slideshow.js"></script>	
+</body>
 </html>
