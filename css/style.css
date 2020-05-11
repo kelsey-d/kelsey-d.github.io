@@ -212,7 +212,7 @@ a:hover {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 0;
+	z-index: 2;
 	animation-name: background_animation;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
@@ -232,7 +232,7 @@ a:hover {
 }
 
 	
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 	.container {
 		display: none;
 	}
