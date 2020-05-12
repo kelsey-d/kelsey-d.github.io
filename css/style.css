@@ -239,15 +239,16 @@ a:hover {
 
 	.slideshow-container {
 	  display: initial;
-	  width: 60%;
+	  width: 100%;
 	  position: relative;
 	  background: #f1f1f1f1;
 	  margin:0px auto;
+	  height: 100%;
 	}
 
 	.mySlides {
 	  display: none;
-	  height: 1000px;
+	  height: 90%;
 	}
 
 	#slide1{
@@ -264,14 +265,25 @@ a:hover {
 
 	#slide3{
 	  background-image: url('../img/lana.png');
-	  background-size: 150%;
+	  background-size: cover;
 	  background-position: center;
 	}
 
 	#slide4{
 	  background-image: url('../img/pumpkin.png');
-	  background-size: 150%;
+	  background-size: cover;
 	  background-position: center bottom;
+	}
+	.title {
+		font-family: 'Press Start 2P';
+		font-size: 20px;
+		color: #1A7F46;
+		width: 700px;
+		text-align: center;
+		margin: 300px 0px 0px 550px; 
+		position: absolute;
+		border-top: 3px solid #1A7F46;
+		border-bottom: 3px solid #1A7F46;
 	}
 
 	.layer_contents{
@@ -279,11 +291,11 @@ a:hover {
 	  color: #1A7F46;
 	  border-top: 3px solid #1A7F46;
 	  border-bottom: 3px solid #1A7F46;
-	  width: 50%;
+	  width: 100%;
 	  text-align: center;
-	  margin: auto;
+	  margin: 0;
 	  position: absolute;
-	  top: 50%;
+	  margin-top: 50%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	}
@@ -295,8 +307,8 @@ a:hover {
 
 	.prev, .next {
 	  cursor: pointer;
-	  position: absolute;
-	  top: 200px;
+	  position: fixed;
+	  top: 300px;
 /*	  width: auto;*/
 	  margin-top: 5px;
 	  padding: 16px;
@@ -305,10 +317,9 @@ a:hover {
 	  font-size: 20px;
 	  border-radius: 0 3px 3px 0;
 	}
-
 	.next {
-	  position: absolute;
-	  right: 0;
+	  position: fixed;
+	  right: 0px;
 	  border-radius: 3px 0 0 3px;
 	}
 
@@ -324,6 +335,7 @@ a:hover {
 	    padding: 20px 0 20px 0;
 	    background: #1A7F46;
 	    width: 100%;
+	    position: relative;
 	}
 
 	/* The dots/bullets/indicators */

@@ -9,6 +9,7 @@
 		<script src="js/jquery.collapse.js"></script>
     	<script src="js/jquery.collapse_storage.js"></script>
     	<script src="js/jquery.collapse_cookie_storage.js"></script>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 		<div class="landing_animation_container"></div>
@@ -93,6 +94,12 @@
 	</div>
 
 	<script>
+		var body = document.getElementsByTagName('body')[0];
+		body.style.height = window.innerHeight + "px";
+		body.style.width = window.innerWidth + "px";
+
+
+
 		var image = document.getElementsByClassName("image")[0];
 		
 		function weird() {
