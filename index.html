@@ -12,7 +12,34 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-		<div class="landing_animation_container"></div>
+	<div class="landing_animation_container"></div>
+	<div class="slideshow-container">
+	<div class="banner"><img class="logo" src="img/logo.png" onclick="hamburger()"><h1 class="greeting">Welcome Home</h1></div>
+		
+	<div id="slide1" class="mySlides"> </div>
+
+	<div id="slide2" class="mySlides">
+	</div>
+
+	<div id="slide3" class="mySlides">
+	</div>
+
+	<div id="slide4" class="mySlides">
+	</div>
+
+
+	<a class="prev" onclick="setIndexFromSideButton(-1)">❮</a>
+	<a class="next" onclick="setIndexFromSideButton(1)">❯</a>
+
+
+
+	<div class="dot-container">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+	</div>
 		<div class="container">
 		<div class='title'>
 			<h1> Welcome Home</h1>
@@ -21,12 +48,11 @@
 			<ul class="menu_list">
 				<li id="home"><a href="index.html">home</a></li>
 				<li id="about"><a href="about.html">about</a></li>
-				<li id=""><a href="work.html">carousel</a></li>
 				<div id="default-example" data-collapse="accordion">
 				<li id="works">works</li>
 				<div>
 					<ul class="work_list">
-						<li><a href="story/flower.html">week 0</a></li>
+						<li><a href="week0.html">week 0</a></li>
 						<li><a href="week1.html">week 1</a></li>
 						<li><a href="week2.html">week 2</a></li>
 						<li><a href="week3.html">week 3</a></li>
@@ -43,62 +69,24 @@
 		<img onclick="weird()" src="img/tn1.png"><img onclick="phew()" src="img/tn2.png"><img onclick="lana()" src="img/tn3.png"><img onclick="pumpkin()" src="img/tn4.png"></div>
 	</div>
 
-	<div class="slideshow-container">
-	<div id="slide1" class="mySlides">
-	  <div class="layer">
-	    <div class="layer_contents">
-	      <p class="author">Code Poem</p>
-	      <a href="description1.html">description</a>
-	    </div>
-	  </div>
-	 </div>
-
-	<div id="slide2" class="mySlides">
-	  <div class="layer">
-	    <div class="layer_contents">
-	      <p class="author">Video Player</p>
-	      <a href="description2.html">description</a>
-	    </div>
-	  </div>
-	</div>
-
-	<div id="slide3" class="mySlides">
-	  <div class="layer">
-	    <div class="layer_contents">
-	      <p class="author">Snack Packet</p>
-	      <a href="description3.html">description</a>
-	    </div>
-	  </div>
-	</div>
-
-	<div id="slide4" class="mySlides">
-	  <div class="layer">
-	    <div class="layer_contents">
-	      <p class="author">Responsive Page</p>
-	      <a href="description5.html">description</a>
-	    </div>
-	  </div>
-	</div>
 
 
-	<a class="prev" onclick="setIndexFromSideButton(-1)">❮</a>
-	<a class="next" onclick="setIndexFromSideButton(1)">❯</a>
-
-	</div>
-
-	<div class="dot-container">
-	  <span class="dot" onclick="currentSlide(1)"></span> 
-	  <span class="dot" onclick="currentSlide(2)"></span> 
-	  <span class="dot" onclick="currentSlide(3)"></span> 
-	  <span class="dot" onclick="currentSlide(4)"></span>
-	</div>
 
 	<script>
 		var body = document.getElementsByTagName('body')[0];
 		body.style.height = window.innerHeight + "px";
 		body.style.width = window.innerWidth + "px";
 
+		function hamburger() {
+		  var x = document.getElementsByClassName("menu")[0];
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		    x.style.zIndex = "1";
 
+		  }
+		}
 
 		var image = document.getElementsByClassName("image")[0];
 		
