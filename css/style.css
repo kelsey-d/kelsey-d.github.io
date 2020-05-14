@@ -5,6 +5,7 @@ body{
 
 .container {
 	width: 100%;
+	height: 100%;	
 }
 
 
@@ -102,7 +103,7 @@ img:hover {
 }
 
 @media only screen and (max-width: 1600px) {
-	.slideshow-container {
+	.mobile-container {
 		display: none;
 	}
 
@@ -171,7 +172,7 @@ img:hover {
  	height: 100%;
  	background-color: #1A7F46;
  	position: fixed;
- 	z-index: 0;
+ 	z-index: 1;
 }
 
  
@@ -229,7 +230,7 @@ a:hover {
 @keyframes background_animation {
 	0% { opacity: 1;}
 	99% { opacity: 0; z-index: 0;}
-	100% { opacity: 0; z-index: -2;}
+	100% { opacity: 0; z-index: -3;}
 }
 
 
@@ -240,19 +241,23 @@ a:hover {
 		display: none;
 	}
 
-
 	.landing_animation_container {
 		width: 100%;
 		height: 100%;
+		background-size: 50%;
 	}	
 
+	.mobile-container {
+	  display: inherit;
+	}
+
 	.slideshow-container {
-	  display: initial;
-	  width: 100%;
-	  height: 100%;
-	  position: relative;
-	  background: #f1f1f1f1;
-	  margin:0px;
+		display: inline;
+		width: 100%;
+	  	height: 90%;
+	  	position: relative;
+	  	background: #f1f1f1f1;
+	  	margin:0px;
 	}
 
 	.banner {
@@ -263,25 +268,25 @@ a:hover {
 		margin: 0px;
 		top: 0px;
 		width: 100%;
-		height: 100px;
+		height: 70px;
 		position: relative;
 	}
 
 	.greeting {
 		font-family: 'Press Start 2P';
-		font-size: 30px;
+		font-size: 26.9px;
   		display: inline-block;			
-  		margin: 40px 0px 0px 0px;
  	
 	}
 
 	.logo {
    		display: inline-block;
+   		margin-top: 10px;
 	}
 
 	
 	.mySlides {
-		display: block;
+		display: inline-block;
 		position: relative;
 		height: 90%;
 	}
@@ -338,18 +343,16 @@ a:hover {
 	  color: white;
 	}
 
-	/* The dot/bullet/indicator container */
 	.dot-container {
+		display: inline-block;
 	    text-align: center;
 	    margin:0px;
 	    padding: 20px 0 20px 0;
 	    background: #1A7F46;
 	    width: 100%;
-	    height: 1%;
 	    position: relative;
 	}
 
-	/* The dots/bullets/indicators */
 	.dot {
 	  cursor: pointer;
 	  height: 15px;
@@ -361,57 +364,55 @@ a:hover {
 	  transition: background-color 0.6s ease;
 	}
 
-	/* Add a background color to the active dot/circle */
 	.active, .dot:hover {
 	  background-color: #FFF498;
 	}
 
 	.menu{
 		display: none;
-		top: 15%;
+		top: 12%;
 		margin: auto;
 		width: 100%;
-		height: 95%;
+		height: 101%;
 		align-items: center;
 	 	background-color: #1A7F46;
 	 	position: absolute;
 	}
 
-.menu_list{
- 	list-style-type: none;
- 	margin: 0px;
- 	font-family: 'Quantico';
-	font-size: 40px;
-	text-align: center;	
-	color: #FFF498;
- }
+	.menu_list{
+	 	list-style-type: none;
+	 	margin: 0px;
+	 	font-family: 'Quantico';
+		font-size: 40px;
+		text-align: center;	
+		color: #FFF498;
+	 }
 
- .work_list{
- 	list-style-type: none;
- 	font-size: 35px;
- 	margin: 0px;
- 	padding-right: 0px;
- }
+	 .work_list{
+	 	list-style-type: none;
+	 	font-size: 35px;
+	 	margin: 0px;
+	 	padding-right: 0px;
+	 }
 
-.socials {
-	width: 100%;
-	bottom: 0%;
-	text-align: center;
-	position: absolute;
-}
+	.socials {
+		width: 100%;
+		bottom: 0%;
+		text-align: center;
+		position: absolute;
+	}
 
-a:link {
-	color: white;
-	text-decoration: none;
-}
+	a:link {
+		color: white;
+		text-decoration: none;
+	}
 
-a:visited {
-	color: inherit;
-}
+	a:visited {
+		color: inherit;
+	}
 
-a:hover {
-	color: #AAD4FF;
-}
-
+	a:hover {
+		color: #AAD4FF;
+	}
 
 }

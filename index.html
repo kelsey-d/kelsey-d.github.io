@@ -13,8 +13,11 @@
 </head>
 <body>
 	<div class="landing_animation_container"></div>
-	<div class="slideshow-container">
+
+	<div class="mobile-container">
 	<div class="banner"><img class="logo" src="img/logo.png" onclick="hamburger()"><h1 class="greeting">Welcome Home</h1></div>
+	<div class="slideshow-container">
+
 		
 	<div id="slide1" class="mySlides"> </div>
 
@@ -30,7 +33,7 @@
 
 	<a class="prev" onclick="setIndexFromSideButton(-1)">❮</a>
 	<a class="next" onclick="setIndexFromSideButton(1)">❯</a>
-
+ 	</div>
 
 
 	<div class="dot-container">
@@ -40,7 +43,8 @@
 	  <span class="dot" onclick="currentSlide(4)"></span>
 	</div>
 	</div>
-		<div class="container">
+
+	<div class="container">
 		<div class='title'>
 			<h1> Welcome Home</h1>
 		</div>
@@ -69,13 +73,14 @@
 		<img onclick="weird()" src="img/tn1.png"><img onclick="phew()" src="img/tn2.png"><img onclick="lana()" src="img/tn3.png"><img onclick="pumpkin()" src="img/tn4.png"></div>
 	</div>
 
+	
 
 
 
 	<script>
-		var body = document.getElementsByTagName('body')[0];
-		body.style.height = window.innerHeight + "px";
-		body.style.width = window.innerWidth + "px";
+		var ssc = document.getElementsByClassName('mobile-container')[0];
+		ssc.style.height = window.innerHeight + "px";
+		ssc.style.width = window.innerWidth + "px";
 
 		function hamburger() {
 		  var x = document.getElementsByClassName("menu")[0];
@@ -87,7 +92,6 @@
 
 		  }
 		}
-
 		var image = document.getElementsByClassName("image")[0];
 		
 		function weird() {
@@ -105,6 +109,7 @@
 		function pumpkin() {
 			image.setAttribute("class", "pumpkin");
 		}
+
 
 	</script>
 	<script src="js/slideshow.js"></script>	
