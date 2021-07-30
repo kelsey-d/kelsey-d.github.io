@@ -1,117 +1,112 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-		<title>Kelsey's Homepage</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Lacquer|Press+Start+2P|Quantico|Source+Code+Pro&display>=swap" rel="stylesheet">
-		<link rel="icon" href="img/logo.png" type='image/png' >
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="js/jquery.collapse.js"></script>
-    	<script src="js/jquery.collapse_storage.js"></script>
-    	<script src="js/jquery.collapse_cookie_storage.js"></script>
+    	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    	<link rel="icon" href="media/logo.png" type='image/png'>
+    	<title>Home | Kelsey Damier</title>
 </head>
-<body>
-	<div class="landing_animation_container"></div>
+<body id=b>
+	<div class="container-fluid p-0">
+	<header id=h class="container-fluid vh-100 p-0">
+		<canvas id="bg" style="border:1px solid #000000; margin: 0;">
+		</canvas>
+		<div class="sun"></div>
+		<div class="train"></div>
+		<div class="overlay"></div>
+		<div class="phone"></div>
 
-	<div class="mobile-container">
-	<div class="banner"><img class="logo" src="img/logo.png" onclick="hamburger()"><h1 class="greeting">Welcome Home</h1></div>
-	<div class="slideshow-container">
-
-		
-	<div id="slide1" class="mySlides"> </div>
-
-	<div id="slide2" class="mySlides">
-	</div>
-
-	<div id="slide3" class="mySlides">
-	</div>
-
-	<div id="slide4" class="mySlides">
-	</div>
-
-
-	<a class="prev" onclick="setIndexFromSideButton(-1)">❮</a>
-	<a class="next" onclick="setIndexFromSideButton(1)">❯</a>
- 	</div>
-
-
-	<div class="dot-container">
-	  <span class="dot" onclick="currentSlide(1)"></span> 
-	  <span class="dot" onclick="currentSlide(2)"></span> 
-	  <span class="dot" onclick="currentSlide(3)"></span> 
-	  <span class="dot" onclick="currentSlide(4)"></span>
-	</div>
-	</div>
-
-	<div class="container">
-		<div class='title'>
-			<h1> Welcome Home</h1>
-		</div>
-		<div class="menu">
-			<ul class="menu_list">
-				<li id="home"><a href="index.html">home</a></li>
-				<li id="about"><a href="about.html">about</a></li>
-				<div id="default-example" data-collapse="accordion">
-				<li id="works">works</li>
-				<div>
-					<ul class="work_list">
-						<li><a href="week0.html">week 0</a></li>
-						<li><a href="week1.html">week 1</a></li>
-						<li><a href="week2.html">week 2</a></li>
-						<li><a href="week3.html">week 3</a></li>
-						<li><a href="week5.html">week 5</a></li>
-						<li><a href="week9.html">week 9</a></li>
-					</ul>
-				</div>
-				</div>
+		<nav class="navbar navbar-expand-sm d-flex justify-content-center">
+			<a id="name" class="navbar-brand vw-100" href=index.html>KELSEY DAMIER</a>
+			<ul id="links" class="navbar-nav vw-100 d-flex justify-content-flex-start d-none">
+				<li class="nav-item">
+					<a class="nav-link" href=#>About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href=#>Web</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href=#>Graphics</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href=#>Illustrations</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href=#>More</a>
+				</li>
 			</ul>
-			<div class="socials"><a href="https://www.linkedin.com/in/kelsey-damier/"><img src="img/linkedin.png"></a><a href="mailto:kelseydamier@outlook.com"><img src="img/email.png"></a></div>
+			 <button class="float-end kebab-icon" type="button" style="background-color: transparent;" onclick="toggleMenu()">
+   		 </button>
+		</nav>
+		
+		<span id="intro" class="d-flex flex-column px-2">
+			<p>Hello World 🌎,</p>
+			<p>I am an aspiring digital designer from NYC.</p>
+			<a class="align-self-end" href=#><u>read more</u></a>
+		</span>
+	</header>
+	<div id="featured" class="container p-0">
+		<center class="title pt-4"> AT A GLANCE... 👀</center>
+		<div class="row">
+			<div class="col"><h1> OOTD </h1><h4>Web</h4>
+				<p>A redesign of an assignment from my Web Production II class.</p></div>
+			<div class="col"></div>
 		</div>
-		<div class='image'></div>
-		<div class='thumbnails'>
-		<img onclick="weird()" src="img/tn1.png"><img onclick="phew()" src="img/tn2.png"><img onclick="lana()" src="img/tn3.png"><img onclick="pumpkin()" src="img/tn4.png"></div>
+		<div class="row">
+			<div class="col">
+			<h1> Go with OOA </h1></div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col">
+			<h1> Valentine's Comic </h1></div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col">
+			<h1> Magic Mailbox </h1></div>
+			<div class="col"></div>
+		</div>
 	</div>
-
-	
-
-
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 	<script>
-		var ssc = document.getElementsByClassName('mobile-container')[0];
-		ssc.style.height = window.innerHeight + "px";
-		ssc.style.width = window.innerWidth + "px";
+		var c = document.getElementById("bg");
+		var ctx = c.getContext("2d");
 
-		function hamburger() {
-		  var x = document.getElementsByClassName("menu")[0];
-		  if (x.style.display === "block") {
-		    x.style.display = "none";
-		  } else {
-		    x.style.display = "block";
-		    x.style.zIndex = "1";
+		// Create gradient
+		var grd = ctx.createLinearGradient(0, 0, 0, 40);
+		grd.addColorStop(0, "#A4CFFA");
+		grd.addColorStop(1, "#004F2A");
 
-		  }
+		// Fill with gradient
+		ctx.fillStyle = grd;
+		ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
+		//Menu function
+
+		function toggleMenu(){
+			var links = document.getElementById("links");
+			var button =  document.getElementsByTagName("button")[0];
+
+			links.classList.toggle("d-none");
+			button.classList.toggle("kebab-icon");
+			button.classList.toggle("exit-icon");
+			// if (links.style.display == "initial" ){
+			// 	links.style.display = "none";
+			// 	name.style.display = "initial";
+			// }
+			// else {
+			// 	links.style.display = "initial";
+			// 	name.style.display = "none";
+			// }
 		}
-		var image = document.getElementsByClassName("image")[0];
-		
-		function weird() {
-			image.setAttribute("class", "image");
-		}
-
-		function phew() {
-			image.setAttribute("class", "phew");
-		}
-
-		function lana() {
-			image.setAttribute("class", "lana");
-		}
-
-		function pumpkin() {
-			image.setAttribute("class", "pumpkin");
-		}
-
-
 	</script>
-	<script src="js/slideshow.js"></script>	
+
 </body>
 </html>
