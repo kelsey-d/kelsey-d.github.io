@@ -158,11 +158,6 @@ button{
 	padding: 50px 15vw;
 }
 
-#featured .line {
-	max-height: 300px;
-
-}
-
 h1{
 	color: #004F2A;
 }
@@ -175,7 +170,7 @@ h1{
 	text-align: center;
 	background-color: #004F2A;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) or (max-height: 786px){
 	#h .navbar-brand {
 		width: 25vmin;
 		overflow-wrap: normal;
@@ -205,8 +200,13 @@ h1{
 	#featured img {
 		width: 100vw;
 		border: none;
-
 	}
+
+	#featured p {
+		height: 50vmin;
+		overflow-x: scroll;
+	}
+
 	.kebab-icon {
 		height: 50px;
 		width: 50px;
