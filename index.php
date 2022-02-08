@@ -47,36 +47,13 @@ $instagram = new Instagram(array(
 			<a class="navbar-brand vw-100" href=index.html>KELSEY DAMIER</a>
 		</nav>
 		<span id="intro" class="d-flex flex-column px-2">
-			<p>Hello World 🌎,</p>
-			<p>I am an aspiring digital designer from NYC.</p>
+			<p>Pixel perfect design and illustration</p>
+			<p>*pixie, my bad :)</p>
 			<a class="align-self-end" href=about.html><u>read more</u></a>
 		</span>
 	</header>
 	<div id="work" class="container-fluid p-0">
 		<center class="title">AT A GLANCE... 👀</center>
-		<!-- <div class="row">
-		<div class="col">
-			<div class="row">
-				<img src="media/evolve.png">
-			</div>
-			<div class="row">
-				<h4><i>Infographic</i></h4>
-				<h1>QWOCMAP</h1>
-			</div>
-			<div class = "row">
-				<img src="media/ooa.gif" alt="">
-			</div>
-		</div>
-		<div class="col">
-			<div class="row">
-				<h4><i>Infographic</i></h4>
-				<h1> Farm Fresh Facts </h1>
-			</div>
-			<div class="row">
-				<img src="media/qwocmap.gif" alt="">
-			</div>
-		</div>
-	</div> -->
 		<div class="row">
 			<div class="col d-flex justify-content-end">
 				<div class="img-container ">
@@ -125,7 +102,7 @@ $instagram = new Instagram(array(
 			</div>
 		</div>
 	</div>
-	<div id="illustrations" class="container-fluid p-0">
+	<div id="illustrations" class="container-fluid vh-100 p-0">
 		<center class="title"> KEEP LOOKING 🎨</center>
 		<div class="row d-flex flex-column">
 			<?php 
@@ -137,37 +114,13 @@ $instagram = new Instagram(array(
 		</div>
 	</div>	
 	<footer id=f class="container-fluid m-0">
-			<p>CONTACT ME !</p>
+			<p>LET'S CHAT !</p>
 			<a href="mailto:kelseydamier@outlook.com"><img src="media/email.png"></a>
 			<a href="https://www.linkedin.com/in/kelsey-damier/"><img src="media/linkedin.png"></a>
 	</footer>
 </div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-	<script>
-		var c = document.getElementById("bg");
-		var ctx = c.getContext("2d");
-
-		// Create gradient
-		var grd = ctx.createLinearGradient(0, 0, 0, 40);
-		grd.addColorStop(0, "#A4CFFA");
-		grd.addColorStop(1, "#004F2A");
-
-		// Fill with gradient
-		ctx.fillStyle = grd;
-		ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
-
-		//Menu function
-
-		function toggleMenu(){
-			var links = document.getElementById("links");
-			var button =  document.getElementsByTagName("button")[0];
-
-			links.classList.toggle("d-none");
-			button.classList.toggle("kebab-icon");
-			button.classList.toggle("exit-icon");
-		}
-	</script>
 
 </body>
 </html>

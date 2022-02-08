@@ -1,7 +1,13 @@
-@@font-face {
-    font-family: 'Young';
-    src: url('../fonts/Young.ttf');
-    src: url('../fonts/Young.ttf') format('truetype'); 
+@font-face {
+    font-family: 'BOOKMARK';
+    src: url('../fonts/BOOKMARK.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wedges';
+    src: url('../fonts/Wedges.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -9,10 +15,36 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	font-family: "Young", Helvetica !important;
+	font-family: "BOOKMARK", Helvetica !important;
+	background-image: url(../media/bg.png);
+}
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	  background-color: white;
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: black; 
+	border-radius: 10px;
+  }
+  
+
+body {
+	overflow-x: hidden;
 }
 
-nav, canvas, #h img {
+#b .container {
+	width: 100vw;
+}
+nav, #h img {
 	position: absolute;
 } 
 
@@ -20,7 +52,7 @@ nav, canvas, #h img {
 	height: 10vh;
 	padding: 0px;
 	display: flex;
-	border-bottom: 1px solid black;
+
 }
 
 #h .nav-item {
@@ -30,10 +62,6 @@ nav, canvas, #h img {
 
 #h .nav-link {
 	text-decoration: none;
-}
-canvas {
-	width: 100%;
-	height: 100%;
 }
 
 a:link {
@@ -48,29 +76,11 @@ a:visited {
 	color: inherit;
 }
 
-.sun, .train, .overlay, .phone {
+.phone {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	background-size: contain;
-}
-
-.sun {
-	background-image: url(../media/sun.png);
-	background-repeat: no-repeat;
-}
-
-.train {
-	background-image: url(../media/train.png);
-	background-repeat: no-repeat;
-}
-
-.overlay {
-	background-color: white;
-	opacity: 85%;
-}
-
-.phone {
 	background-image: url(../media/phone.png);
 	background-position: left bottom;
 	background-repeat: no-repeat;
@@ -83,6 +93,8 @@ a:visited {
 }
 
 #h .navbar{
+	background-color: white;
+	border-bottom: 2.5px solid #004F2A ;
 	height: 75px;
 }
 
@@ -99,20 +111,6 @@ button{
 	text-decoration: none;
 	position: absolute;
 	right: 2vw;
-}
-
-.kebab-icon {
-	height: 75px;
-	width: 75px;
-	background-color: transparent;
-	background-image: url(../media/menu.png);
-}
-
-.exit-icon {
-	height: 75px;
-	width: 75px;
-	background-color: transparent;
-	background-image: url(../media/exit-menu.png);
 }
 
 #h .navbar-nav {
@@ -133,53 +131,118 @@ button{
 	top: 25vh;
 	right: 5vw;
 	font-size: 5vmin;
-	color: #004F2A;
+	color: white
 
 }
 
+#intro p{
+	background-color: #007EFF;
+	border-radius: 100px;
+	padding-left: 25px;
+	animation-name: message;
+	animation-duration: 2s;
+}
+
+@keyframes message {
+	0% {opacity: 25%; margin-top: 255px;}
+	100% {opacity: 100%; margin-top: 0px;}
+}
+#intro u{
+	color: #007EFF;
+	background-color: rgba(255, 255, 255,.75);
+}
 #intro .align-self-end{
 	font-size: 3.5vmin;
 }
 
-#featured img{
-	width: 50vw;
-	border-right: 2px solid black;
-	position: relative;
-}
+
 .title {
 	font-size: 10vmin;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;	
+	background-color: white;	
 	color: #004F2A;
+	border-top: 2.5px solid #004F2A ;
+	border-bottom: 2.5px solid #004F2A;
 }
 
-#featured .row{
+#work .row{
 	margin: 0px;
-	padding: 50px 15vw;
+	padding: 50px 5vw;
 }
 
-#featured p{
-	max-height: 50vmin;
-	overflow-y: auto;
+#work .line{
+	background-color: rgba(255, 255, 255,.75);
+	padding: 100px;
+}
+/* #work .col{
+	border: 25px solid black;
+} */
+
+#work h4{
+	font-size: 5vmin;
 }
 
-h1{
+#work h1{
 	color: #004F2A;
+	font-family: "Wedges";
+	font-size: 10vmin;
+}
+/* #work .img-container{
+	width: 50%;
+	height: auto;
+} */
+
+#work img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
+#illustrations {
+	background-image: url("../media/bg(2).png");
+}
+#illustrations .row{
+	display: block;
+	width: 100vw;
+	height: 75vh;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+#illustrations .img-container{
+	display: inline-block;
+}
+
+#illustrations .img-container{
+	width: auto;
+	height: 75%;
+}
+#illustrations img{
+	width: auto;
+	height: 100%;
+}
+
+#about {
+	background-color: rgba(255, 255, 255,.95);
+	width: 75vw;
+}
+
+#about h1{
+	font-size: 70px;
+}
+
+#about h4{
+	font-size: 35px;
+}
 #f {
 	border-top: 1px solid black;
 	padding: 50px;
 	color: white;
-	font-size: 3.5vmin;
+	font-size: 5vmin;
 	text-align: center;
 	background-color: #004F2A;
 }
-@media only screen and (max-width: 567px){
-	.phone {
-		background-image: url(../media/phone-mobile.png);
-	}
-		
+
+@media only screen and (max-width: 768px){
 	#h .navbar-brand {
 		width: 25vmin;
 		overflow-wrap: normal;
@@ -206,23 +269,19 @@ h1{
 		font-size: 3.5vh;
 	}
 
-	#featured img {
+	#work .img-container{
 		width: 100vw;
-		border: none;
-
+		height: auto;
+	}
+	#about {
+		width: 100vw;
 	}
 
-
-	.kebab-icon {
-		height: 50px;
-		width: 50px;
-		background-size: contain;
+	#about h1{
+		font-size: 50px;
 	}
-
-	.exit-icon {
-		height: 40px;
-		width: 40px;
-		background-size: contain;
+	
+	#about h4{
+		font-size: 25px;
 	}
-
 }
