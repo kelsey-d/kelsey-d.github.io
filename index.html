@@ -74,13 +74,13 @@
 			</div>
 		</div>
 	</div>
-	<div id="illustrations" class="container-fluid p-0">
+	<div id="illustrations" class="container-fluid vh-100 p-0">
 		<center class="title"> KEEP LOOKING 🎨</center>
-		<div class="row d-flex flex-column">
-			<div class="img-container m-5"> 
+		<div class="row d-flex flex-row">
+			<div class="img-container"> 
                 <img src="media/phew.png">
 			</div>
-			<div class="img-container m-5"> 
+			<div class="img-container"> 
 				<img src="media/lana.png">
 			</div>
 		</div>
@@ -92,6 +92,17 @@
 	</footer>
 </div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script>
+		var title = document.querySelector('.title');
+		var title_height = title.offsetHeight;
+		console.log(title_height);
 
+		var illustration_container = document.querySelector('#illustrations > .row');
+		var illustration_container_height = window.innerHeight - title_height;
+		console.log(illustration_container_height);
+
+		illustration_container.style.height = illustration_container_height + "px";
+		console.log(illustration_container.style.height);
+	</script>
 </body>
 </html>

@@ -173,9 +173,6 @@ button{
 	background-color: rgba(255, 255, 255,.75);
 	padding: 100px;
 }
-/* #work .col{
-	border: 25px solid black;
-} */
 
 #work h4{
 	font-size: 5vmin;
@@ -186,10 +183,6 @@ button{
 	font-family: "Wedges";
 	font-size: 10vmin;
 }
-/* #work .img-container{
-	width: 50%;
-	height: auto;
-} */
 
 #work img{
     width: 100%;
@@ -201,21 +194,17 @@ button{
 	background-image: url("../media/bg(2).png");
 }
 #illustrations .row{
-	display: block;
 	width: 100vw;
-	height: 75vh;
-	white-space: nowrap;
-	overflow-x: scroll;
-}
-
-#illustrations .img-container{
-	display: inline-block;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 
 #illustrations .img-container{
 	width: auto;
 	height: 75%;
+	align-self: center;
 }
+
 #illustrations img{
 	width: auto;
 	height: 100%;
@@ -243,6 +232,10 @@ button{
 }
 
 @media only screen and (max-width: 768px){
+	.phone {
+		background-image: url(../media/phone-mobile.png);
+	}
+
 	#h .navbar-brand {
 		width: 25vmin;
 		overflow-wrap: normal;
@@ -265,14 +258,34 @@ button{
 		margin: auto;
 	}
 
+	#intro p{
+		border-radius: 50px;
+	}
+
 	#intro .align-self-end{
 		font-size: 3.5vh;
+	}
+
+	#work .line{
+		margin-top: 25px;
+		padding: 50px;
 	}
 
 	#work .img-container{
 		width: 100vw;
 		height: auto;
 	}
+
+	#illustrations .row{
+		justify-content: start;
+		overflow-x: scroll;
+	}
+
+	#illustrations .img-container{
+		max-width: none;
+		padding: 50px;
+	}
+
 	#about {
 		width: 100vw;
 	}
@@ -284,4 +297,6 @@ button{
 	#about h4{
 		font-size: 25px;
 	}
+
+
 }
