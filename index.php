@@ -47,7 +47,7 @@ $instagram = new Instagram(array(
 			<a class="navbar-brand vw-100" href=index.html>KELSEY DAMIER</a>
 		</nav>
 		<span id="intro" class="d-flex flex-column px-2">
-		<p>Pixel perfect design and illustration</p>
+		<p>Hi! I'm a design astronaut exploring a digital space</p>
 			<p>*pixie, my bad 🧚🏽‍♀️</p>
 			<a class="align-self-end" href=about.html><u>read more</u></a>
 		</span>

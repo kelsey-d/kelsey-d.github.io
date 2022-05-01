@@ -93,9 +93,9 @@ a:visited {
 }
 
 #h .navbar{
-	background-color: white;
-	border-bottom: 2.5px solid #004F2A ;
-	height: 75px;
+	background-color: rgba(255, 255, 255,1);
+	/* border-bottom: 2.5px solid #004F2A ; */
+	/* height: 75px; */
 }
 
 #h .navbar-brand {
@@ -131,14 +131,15 @@ button{
 	top: 25vh;
 	right: 5vw;
 	font-size: 5vmin;
-	color: white
+	color: white;
 
 }
 
 #intro p{
-	background-color: #007EFF;
-	border-radius: 100px;
-	padding-left: 25px;
+	background-color: #004F2A;
+	width:fit-content;
+	border-radius: 50px;
+	padding: 0px 25px 0px;
 	animation-name: message;
 	animation-duration: 2s;
 }
@@ -160,28 +161,36 @@ button{
 	font-size: 10vmin;
 	background-color: white;	
 	color: #004F2A;
-	border-top: 2.5px solid #004F2A ;
-	border-bottom: 2.5px solid #004F2A;
+	/* border-top: 2.5px solid #004F2A ;
+	border-bottom: 2.5px solid #004F2A; */
 }
 
 #work .row{
 	margin: 0px;
 	padding: 50px 5vw;
+	min-width: 100vw;
+	display: flex;
 }
 
 #work .line{
 	background-color: rgba(255, 255, 255,.75);
 	padding: 100px;
+	height: fit-content;
+	align-self: flex-end;
 }
 
 #work h4{
-	font-size: 5vmin;
+	font-size: 4vmin;
 }
 
 #work h1{
 	color: #004F2A;
 	font-family: "Wedges";
-	font-size: 10vmin;
+	font-size: 8vmin;
+}
+
+#work p{
+	font-size: 30px;
 }
 
 #work img{
@@ -191,8 +200,13 @@ button{
 }
 
 #illustrations {
-	background-image: url("../media/bg(2).png");
+	background-color: white;
 }
+
+#illustrations .title{
+	border-top: 2.5px solid #004F2A;
+}
+
 #illustrations .row{
 	width: 100vw;
 	flex-wrap: nowrap;
@@ -217,6 +231,7 @@ button{
 
 #about h1{
 	font-size: 70px;
+	color: #004F2A;
 }
 
 #about h4{
@@ -226,7 +241,7 @@ button{
 	border-top: 1px solid black;
 	padding: 50px;
 	color: white;
-	font-size: 5vmin;
+	font-size: 3vmin;
 	text-align: center;
 	background-color: #004F2A;
 }
@@ -274,6 +289,10 @@ button{
 	#work .img-container{
 		width: 100vw;
 		height: auto;
+	}
+
+	#work p{
+		font-size: medium;
 	}
 
 	#illustrations .row{

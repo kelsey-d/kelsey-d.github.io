@@ -18,14 +18,27 @@
 		<nav class="navbar navbar-expand-sm d-flex justify-content-center">
 			<a class="navbar-brand vw-100" href=index.html>KELSEY DAMIER</a>
 		</nav>
-		<span id="intro" class="d-flex flex-column px-2">
-			<p>Pixel perfect design and illustration</p>
-			<p>*pixie, my bad 🧚🏽‍♀️</p>
+		<div id="intro" class="d-flex flex-column px-2">
+			<p>Designaut exploring digital space through visual design</p>
+			<p>and illustration.</p>
 			<a class="align-self-end" href=about.html><u>read more</u></a>
-		</span>
+		</div>
 	</header>
 	<div id="work" class="container-fluid p-0">
 		<center class="title">AT A GLANCE... 👀</center>
+		<div class="row">
+			<div class="col-7 d-flex justify-content-end">
+				<div class="img-container">
+				<img onmouseover="before(this)" onmouseout="after(this)" src="media/cover-after.png">
+				</div>
+			</div>
+			<div class="col line">
+				<h4><i>redesign, book covers</i></h4>
+				<h1>Wattpad Wonders </h1>
+				<p> BRIEF: Personal venture to redesign middle school me's Wattpad covers. Click or hover over the image to see the before.
+				</p>
+			</div>	
+		</div>
 		<div class="row">
 			<div class="col d-flex justify-content-end">
 				<div class="img-container ">
@@ -35,6 +48,8 @@
 			<div class="col line">
 				<h4><i>infographic</i></h4>
 				<h1>A.C.R.E.S's Acres of Successes </h1>
+				<p> BRIEF: Agriculture for Community Restoration Economic Justice & Sustainability(A.C.R.E.S.) needed a fun bright infographic encompassing their past acheivements to feature at a fundraiser. 
+				</p>
 			</div>		
 		</div>
 		<div class="row">
@@ -46,7 +61,7 @@
 			<div class="col line">
 				<h4><i>infographic</i></h4>
 				<h1>Mapping a Journey with QWOCMAP</h1>
-			<p></p>
+				<p>BRIEF: Queer Women of Color Media Art Project(QWOCMAP) needed a visually pleasing infographic to showcase their impact in a report to donors.</p>
 			</div>
 		</div>
 		<div class="row">
@@ -56,11 +71,21 @@
 				</div>
 			</div>
 			<div class="col line">
-			<h4><i>social media</i></h4>
-			<h1>Chilling with the Art Nerds</h1>
-			<p></p>
+				<h4><i>social media</i></h4>
+				<h1>Chilling with the Art Nerds</h1>
+				<p>BRIEF: Digital flyers for Office of the Art at Hunter's Instagram, Facebook and newsletter informing students of their digital and in person art trips.
+
+				<a target="_blank" rel="noopener noreferrer" href="https://ooa.hunter.cuny.edu/">Check them out</a>
+				</p>
 			</div>		
 		</div>
+		<!-- <div class="row">
+			<div class="col d-flex justify-content-center">
+				<div class="img-container ">
+					<iframe title="vimeo-player" src="https://player.vimeo.com/video/487698836?h=c73547f2e7" width="740" height="460" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div> -->
 		<div class="row">
 			<div class="col d-flex justify-content-end">
 				<div class="img-container ">
@@ -69,8 +94,8 @@
 			</div>
 			<div class="col line">
 				<h4><i>logo</i></h4>
-				<h1>GMO Free Farm Fresh Grass Fed Logo</h1>			
-			<p></p>
+				<h1>Farm Fresh Grass Fed Logo</h1>			
+				<p>BRIEF: Kensington Farmstand, a GrowNYC greenmarket, needed a logo made from scratch representing their own brand identity.</p>
 			</div>
 		</div>
 	</div>
@@ -86,13 +111,23 @@
 		</div>
 	</div>	
 	<footer id=f class="container-fluid m-0">
-			<p>LET'S CHAT !</p>
+			<p>Check out my LinkedIn for <br>resume details</p>
 			<a href="mailto:kelseydamier@outlook.com"><img src="media/email.png"></a>
 			<a href="https://www.linkedin.com/in/kelsey-damier/"><img src="media/linkedin.png"></a>
 	</footer>
 </div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script>
+		function before(cover){
+			cover.src = "media/cover-before.png";
+
+		}
+
+		function after(cover){
+			cover.src = "media/cover-after.png";
+
+		}
+
 		var title = document.querySelector('.title');
 		var title_height = title.offsetHeight;
 		console.log(title_height);
