@@ -1,32 +1,6 @@
 <?php
-
-/**
- * Instagram PHP API
- * Example for using the getUserMedia() method
- * 
- * @link https://github.com/cosenary/Instagram-PHP-API
- * @author Christian Metz
- * @since 31.01.2012
- */
-
-require 'Instagram-PHP-API-master\src\Instagram.php';
-use MetzWeb\Instagram\Instagram;
-
-// Initialize class
-$instagram = new Instagram(array(
-  'appId'      => '4275119835920404',
-  'appSecret'   => '615662ee031ff6f7e1334e04dceb83b3',
-  'redirectUri' => 'https://kelsey-d.github.io/'
-));
-
-
-  // Store user access token
-  $instagram->setAccessToken('IGQVJVekRWTTAycklYUkxnUzdhV2p1VHNJTTNPVXJ4V1pVMmJiUTNTUEhKVHRScFZAlZAkVrMzlZAejR6dDFzeGIxNThnclNvck9ka0JGRnBTTzFJd3pyYkluNzRydUVIdDRkdHdyRElR');
-
-  // Get the most recent media published by a user
-  $media = $instagram->getUserMedia();
- ?>
-
+	require 'illustrations.php';
+?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -47,8 +21,8 @@ $instagram = new Instagram(array(
 			<a class="navbar-brand vw-100" href=index.html>KELSEY DAMIER</a>
 		</nav>
 		<span id="intro" class="d-flex flex-column px-2">
-		<p>Hi! I'm a design astronaut exploring a digital space</p>
-			<p>*pixie, my bad 🧚🏽‍♀️</p>
+		<p>Exploring design in digital space.</p>
+			<p>Welcome aboard!</p>
 			<a class="align-self-end" href=about.html><u>read more</u></a>
 		</span>
 	</header>
@@ -104,7 +78,7 @@ $instagram = new Instagram(array(
 	</div>
 	<div id="illustrations" class="container-fluid vh-100 p-0">
 		<center class="title"> KEEP LOOKING 🎨</center>
-		<div class="row d-flex flex-column">
+		<div class="row d-flex flex-row">
 			<?php 
 			    foreach ($media->data as $entry) {
 				    echo "<div class=\"img-container m-5\"> 
