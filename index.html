@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -6,9 +5,10 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     	<link rel="icon" href="media/logo.png" type='image/png'>
+		<script src="js/work.js"></script>
     	<title>Home | Kelsey Damier</title>
 </head>
 <body id=b>
@@ -18,121 +18,27 @@
 		<nav class="navbar navbar-expand-sm d-flex justify-content-center">
 			<a class="navbar-brand vw-100" href=index.html>KELSEY DAMIER</a>
 		</nav>
-		<div id="intro" class="d-flex flex-column px-2">
-			<p>Hey !</p>
-			<p>Need an eye for fun, thoughtful design?</p>
+		<span id="intro" class="d-flex flex-column px-2">
+		<p>Exploring design in digital space.</p>
+			<p>Welcome aboard!</p>
 			<a class="align-self-end" href=about.html><u>read more</u></a>
+		</span>
+		<div class="work-nav w-75 d-flex flex-row justify-content-around">
+			<button onclick="noWebWork()">WEB</button></a>
+			<button onclick="displayWork('graphics')">GRAPHICS</button>
+			<button onclick="displayWork('illustrations')">ILLUSTRATIONS</button>
 		</div>
 	</header>
 	<div id="work" class="container-fluid p-0">
-		<center class="title">AT A GLANCE... 👀</center>
-		<div class="row">
-			<div class="col line">
-				<center><h4><i></i></h4>
-				<h1>NEW PROJECTS ON THE HORIZON...</h1>
-				<p>
-				</p></center>
-			</div>	
-		</div>
-		<div class="row">
-			<div class="col d-flex justify-content-end">
-				<div class="img-container ">
-				<img src="media/evolve.png">
-				</div>
-			</div>
-			<div class="col line">
-				<h4><i>infographic</i></h4>
-				<h1>A.C.R.E.S's Acres of Successes </h1>
-				<p> BRIEF: Agriculture for Community Restoration Economic Justice & Sustainability(A.C.R.E.S.) needed a fun bright infographic encompassing their past acheivements to feature at a fundraiser. 
-				</p>
-			</div>		
-		</div>
-		<div class="row">
-			<div class="col d-flex justify-content-end">
-				<div class="img-container ">
-				<img src="media/qwocmap.gif" alt="">
-				</div>
-			</div>
-			<div class="col line">
-				<h4><i>infographic</i></h4>
-				<h1>Mapping a Journey with QWOCMAP</h1>
-				<p>BRIEF: Queer Women of Color Media Art Project(QWOCMAP) needed a visually pleasing infographic to showcase their impact in a report to donors.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col d-flex justify-content-end">
-				<div class="img-container">
-				<img src="media/ooa.gif" alt="">
-				</div>
-			</div>
-			<div class="col line">
-				<h4><i>social media</i></h4>
-				<h1>Chilling with the Art Nerds</h1>
-				<p>BRIEF: Digital flyers for Office of the Art at Hunter's Instagram, Facebook and newsletter informing students of their digital and in person art trips.
-
-				<a target="_blank" rel="noopener noreferrer" href="https://ooa.hunter.cuny.edu/">Check them out</a>
-				</p>
-			</div>		
-		</div>
-		<!-- <div class="row">
-			<div class="col d-flex justify-content-center">
-				<div class="img-container ">
-					<iframe title="vimeo-player" src="https://player.vimeo.com/video/487698836?h=c73547f2e7" width="740" height="460" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div> -->
-		<div class="row">
-			<div class="col d-flex justify-content-end">
-				<div class="img-container ">
-				<img src="media/kensington.jpg" alt="">
-				</div>
-			</div>
-			<div class="col line">
-				<h4><i>logo</i></h4>
-				<h1>Farm Fresh Grass Fed Logo</h1>			
-				<p>BRIEF: Kensington Farmstand, a GrowNYC greenmarket, needed a logo made from scratch representing their own brand identity.</p>
-			</div>
-		</div>
-	</div>
-	<div id="illustrations" class="container-fluid vh-100 p-0">
-		<center class="title"> KEEP LOOKING 🎨</center>
-		<div class="row d-flex flex-row">
-			<div class="img-container"> 
-                <img src="media/phew.png">
-			</div>
-			<div class="img-container"> 
-				<img src="media/lana.png">
-			</div>
-		</div>
 	</div>	
 	<footer id=f class="container-fluid m-0">
-			<p>Check out my LinkedIn for <br>resume details</p>
+			<p>LET'S CHAT !</p>
 			<a href="mailto:kelseydamier@outlook.com"><img src="media/email.png"></a>
-			<a href="https://www.linkedin.com/in/kelsey-damier/"><img src="media/linkedin.png"></a>
+			<a href="https://www.linkedin.com/in/kelsey-damier/" target="_blank"><img src="media/linkedin.png"></a>
 	</footer>
 </div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script>
-		function before(cover){
-			cover.src = "media/cover-before.png";
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-		}
 
-		function after(cover){
-			cover.src = "media/cover-after.png";
-
-		}
-
-		var title = document.querySelector('.title');
-		var title_height = title.offsetHeight;
-		console.log(title_height);
-
-		var illustration_container = document.querySelector('#illustrations > .row');
-		var illustration_container_height = window.innerHeight - title_height;
-		console.log(illustration_container_height);
-
-		illustration_container.style.height = illustration_container_height + "px";
-		console.log(illustration_container.style.height);
-	</script>
 </body>
 </html>
