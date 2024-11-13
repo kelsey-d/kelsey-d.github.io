@@ -64,8 +64,8 @@ function noWebWork(){
     let workContainer = document.getElementById('work');
     let workNav = document.getElementsByClassName('work-nav')[0];
 
-    let alert = `<div class="d-flex justify-content-center"><div id="alert" class="d-block p-5"><p>Web work in progress. Take a look at my GitHub respository. </p>
-			<a href="https://github.com/kelsey-d?tab=repositories" target="_blank">SEE RESPOSITORY</a>
+    let alert = `<div class="d-flex justify-content-center"><div id="alert" class="d-block m-5"><p class="m-4">Web work in progress. Take a look at my GitHub respository. </p>
+			<a href="https://github.com/kelsey-d?tab=repositories" target="_blank" class="mb-4">SEE RESPOSITORY</a>
 		</div></div>`;
     workContainer.innerHTML = alert; 
     workNav.scrollIntoView(true);
